@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<title>Recuperar contraseña</title>
+</head>
+<body>
+
+	<div class="row justify-content-center h-100 py-5 ">
+	<div class="row justify-content-center h-100 ">
+		<div class="container text-center">
+			<p class="text-muted py-2"> <h4>Recuperacion de contraseña </h4></p>
+			<p class="text-muted py-2">Por favor ingrea tu Gmail para poder renovar tu contraseña </p>
+		</div>
+	
+		<div class="col-sm-8 col-md-6 rounded">
+			<div class="row">
+				<div class="col-sm-10 col-md-12 col-lg-12">
+					<form class="needs-validation" novalidate action="recuperar.html" method="post">
+						<div class="input-group mb-3">
+							<span class="input-group-text" id="recuperar">
+								<svg class="bi" width="32" height="32" fill="currentColor">
+                                 <use xlink:href="main/icons/bootstrap-icons.svg#gear-wide-connected"/>
+                                </svg>
+
+                            </span>
+
+							<input type="gmail" name="Recuperar" class ="form-control" placeholder ="Ingrea Gmail" aria-label ="Ingresa Gmail" aria-describedaby="Ingresa Gmail" required>
+							<div class="valid-feedback"> Gmail Valido</div>
+							<div class="invalid-feedback"> Completar este campo</div>
+
+						</div>
+						<div class="d-grid gap-2">
+                        	<button class="btn btn-outline-danger btn-sm " type="submit" > Recuperar </button>
+                        </div>
+					</form>
+
+				</div>
+
+             </div>
+
+         </div>
+
+     </div>
+ </div>
+
+<script>
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<div class="text-center">
+	<img  src="img/vfast.jpg" alt="Logotipo del Desarrollador" class="text-center"  width="35%" height="30%" >
+</div>
+</body>
+</html>
